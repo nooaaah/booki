@@ -16,8 +16,26 @@
  
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <nav>
+                <img  id="logo"src="images/logo/Booki.png" alt="logo">        
+                <ul id="menu">
+                    <li><a href="#">Hébergements</a> </li>
+                    <li><a href="#">Activités</a> </li>
+                </ul>
+            </nav>
+        </header>
         <main>
+            <section class="recherche">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <form action="" method="get">
+                    <label for="zoneRecherche"><i class="fa-solid fa-location-dot"></i> </label>
+                    <input type="text" id="zoneRecherche">
+                    <button id="buttonRecherche">Recherche</button>
+                </form>
+                
+            </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
@@ -42,7 +60,7 @@
                             </article>
                         </a>
                         <a href="#">
-                            <article class="card">
+                           <article class="card">
                             <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel fred-kleber">
                             <div class="card-content">
                                 <div class="card-txt">

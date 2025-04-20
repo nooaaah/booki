@@ -194,6 +194,62 @@ a {
 }
 
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+}
+
+#logo{
+    width: 60px;
+}
+
+#menu{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    
+}
+
+
+#menu :hover{
+    border-top: 1px #0065FC solid;
+    color: #0065FC;
+}
+
+
+.recherche form{
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+.fa-location-dot{
+    color: #000;
+    display: flex;
+    border-radius: 10px 0px 0px 10px;
+    border:solid 1px #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 5px;
+}
+
+#buttonRecherche{
+    display: flex;
+    border-radius: 0px 10px 10px 0px;
+    border: solid 1px #0065FC;
+    background-color: #0065FC;
+    padding: 5px;
+    color: white;
+}
+
+#zoneRecherche{
+    display: flex;   
+    border: solid 2px #F2F2F2;  
+}
+
 
 
 
