@@ -143,6 +143,13 @@ a {
 	height: 210px;
 	margin: 15px 0px 15px 10px;
     min-width: 200px;
+}
+
+.plus{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 600px;
     
     
     
@@ -224,16 +231,21 @@ nav{
 .recherche form{
     display: flex;
     margin-bottom: 10px;
+    margin-top: 30px;
     
 }
 
 .fa-location-dot{
     color: #000;
     display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px 0px 0px 10px;
     border:solid 1px #F2F2F2;
     background-color: #F2F2F2;
     padding: 5px;
+    width: 30px;
+    height: 25px;
 }
 
 #buttonRecherche{
@@ -243,13 +255,154 @@ nav{
     background-color: #0065FC;
     padding: 5px;
     color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 #zoneRecherche{
     display: flex;   
-    border: solid 2px #F2F2F2;  
+    border: solid 1.5px #F2F2F2;  
+    width: 150px;
 }
 
+.filtres {
+    display: flex;
+    flex-direction:row;
+    
+    
+}
+
+.filtres ul{    
+    display: flex;
+    padding-left: 10px;
+     
+}
+
+
+
+.filtres li{ 
+    list-style: none;
+    border:solid 2px #F2F2F2;
+    text-align: center;
+    padding: 3px;
+    width: 140px; 
+    border-radius: 25px;
+    margin-right: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+   
+}
+.filtres .fa-solid{
+    margin-right: 5px;
+}
+
+.filtres p{
+    display: flex;
+
+}
+
+.filtres p .fa-solid{
+    border:solid 2px #F2F2F2;
+    border-radius:80%;
+    padding: 3px;
+    width: 100px;
+    text-align: center;
+    
+}
+
+.filtres li:hover{
+    background-color: #DEEBFF;
+}
+
+
+.info{
+    display: flex;
+}
+.info p{
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    
+}
+.info .fa-solid{
+    border:solid 2px #F2F2F2;
+    border-radius:50%;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+
+
+.Activités {
+    display: flex;
+	flex-direction: row;  
+    flex-wrap: wrap;
+	width: 90%;
+	margin-left: 80px;  
+    
+    margin-bottom: 100px;
+}
+
+.Activités .section-title{
+    margin-top: 80px;
+}
+ 
+
+.Activités .card {
+    background-color: white;
+    border-radius: 20px;
+	width: 30%;
+	height: 300px;
+	
+    
+   
+}
+
+.Activités-cards .card {
+    display: flex;
+    width: 250px;
+    height: 400px;
+    margin-right: 25px;
+    margin-top: 33px;
+    flex-direction: column;
+    padding: 0;
+   
+    
+  
+}
+
+.Activités-cards img {
+    width: 250px;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    
+
+    
+}
+
+.Activités-cards{   
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.Activités-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
 
 
 
