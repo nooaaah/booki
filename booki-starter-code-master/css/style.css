@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-bottom: 0px;
 }
 
 .main-container {
@@ -81,10 +82,10 @@ a {
 
 .hebergements-cards{   
     display: flex;
-    justify-content: space-around;
+    gap: 40px;
     height: fit-content;
     flex-wrap: wrap;
-    
+    margin-left: 5px;
 
 
     
@@ -94,7 +95,7 @@ a {
 
 .hebergements-cards .card {
     display: flex;
-    margin-top: 33px;
+    
     flex-direction: column;
    
     
@@ -103,7 +104,7 @@ a {
 
 .hebergements-cards img {
     width: 100%;
-    height: 100px;
+    height: 110px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
    
@@ -138,20 +139,25 @@ a {
 .hebergements .card {
     background-color: white;
     border-radius: 20px;
-    padding: 6px;
 	width: 30%;
-	height: 210px;
-	margin: 15px 0px 15px 10px;
-    min-width: 200px;
+	height: 200px;
+	
+    min-width: 230px;
+}
+
+.hebergements .section-title{
+    margin-left: 3px;
+    margin-bottom: 33px;
 }
 
 .plus{
     font-weight: bold;
-    font-size: 18px;
-    margin-left: 0px;
-    margin-right: 600px;
+    font-size: 17px;
     
-    
+    margin-right: 670px;
+    margin-top: 15px;
+    margin-bottom: 10px;  
+     
     
 }
 
@@ -219,12 +225,17 @@ nav{
     gap: 40px;
     list-style: none;
     
+    
+}
+#menu li{
+    border-top: 1px solid transparent;
 }
 
 
 #menu :hover{
     border-top: 1px #0065FC solid;
     color: #0065FC;
+    
 }
 
 
@@ -232,6 +243,8 @@ nav{
     display: flex;
     margin-bottom: 10px;
     margin-top: 30px;
+    width: 530px;
+    height: 42px;
     
 }
 
@@ -244,25 +257,29 @@ nav{
     border:solid 1px #F2F2F2;
     background-color: #F2F2F2;
     padding: 5px;
-    width: 30px;
-    height: 25px;
+    width: 45px;
+    height: 30px;
 }
 
 #buttonRecherche{
     display: flex;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 15px 15px 0px;
     border: solid 1px #0065FC;
     background-color: #0065FC;
     padding: 5px;
     color: white;
     align-items: center;
     justify-content: center;
+    width: 137px;
+    font-weight: bold;
+
 }
 
 #zoneRecherche{
     display: flex;   
     border: solid 1.5px #F2F2F2;  
-    width: 150px;
+    width: 185px;
+    
 }
 
 .filtres {
@@ -275,27 +292,53 @@ nav{
 .filtres ul{    
     display: flex;
     padding-left: 10px;
+    gap: 15px;
      
 }
 
+.filtres h3{    
+    padding-top: 8px;
+    margin-right: 10px;
+     
+}
 
 
 .filtres li{ 
     list-style: none;
     border:solid 2px #F2F2F2;
     text-align: center;
-    padding: 3px;
-    width: 140px; 
+    padding: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
     border-radius: 25px;
-    margin-right: 10px;
-    font-size: 1em;
+    
+    
     font-weight: bold;
-    unicode-bidi: isolate;
+    height: fit-content;
+    width: fit-content;
+    
+    
+    
+    
+    
    
 }
 .filtres .fa-solid{
     margin-right: 5px;
+    
+    
+    
+    
 }
+
+.filtres .fa-solid.fa-person{
+    font-size: 20px; 
+    
+    
+
+}
+
+
 
 .filtres p{
     display: flex;
@@ -318,6 +361,7 @@ nav{
 
 .info{
     display: flex;
+    gap: 10px;
 }
 .info p{
     margin-top: 12px;
@@ -344,14 +388,12 @@ nav{
 	flex-direction: row;  
     flex-wrap: wrap;
 	width: 90%;
-	margin-left: 80px;  
-    
+	margin-left: 40px;  
+    margin-top: 80px;
     margin-bottom: 100px;
 }
 
-.Activités .section-title{
-    margin-top: 80px;
-}
+
  
 
 .Activités .card {
@@ -366,19 +408,15 @@ nav{
 
 .Activités-cards .card {
     display: flex;
-    width: 250px;
-    height: 400px;
-    margin-right: 25px;
-    margin-top: 33px;
-    flex-direction: column;
-    padding: 0;
-   
+    width: 300px;
+    height: 420px;
     
-  
+    flex-direction: column;
+    padding: 0; 
 }
 
 .Activités-cards img {
-    width: 250px;
+    width: 300px;
     height: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -390,10 +428,12 @@ nav{
 
 .Activités-cards{   
     display: flex;
-    justify-content: space-around;
     height: fit-content;
-    flex-wrap: wrap;
     flex-direction: row;
+    margin-right: 25px;
+    margin-top: 33px;
+    gap: 20px;
+    
     
 }
 
@@ -401,6 +441,42 @@ nav{
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    
+    
+}
+
+
+
+
+
+.footer{
+    background-color: #F2F2F2 ;
+    display: flex;
+    flex-direction: row;
+    gap: 235px;
+    
+    
+    
+}
+.footer-lien{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    
+       
+}
+
+.footer-lien li{
+    display: flex;
+    list-style: none;
+    padding-bottom: 13px; 
+    
+    
+}
+
+.footer-lien ul{
+    padding-inline-start: 0px;
+    margin-top: 0px;
     
 }
 
@@ -449,6 +525,47 @@ nav{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .filtres {
+        flex-direction: column;
+        
+        
+    }
+    .filtres h3{
+        margin-bottom: 6px;
+    }
+
+    .filtres ul{
+        padding-left: 0px;
+    }
+
+    .Activités{
+        margin-left: 30px;
+    }
+
+    
+
+    .Activités-cards .card{   
+        width: 190px;
+        height: 250px;      
+    }
+
+    .Activités-cards img{
+        width: 190px;
+        height: 180px;
+        min-height: 180px;
+        
+    }
+
+    .Activités-cards .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        gap: 80px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
