@@ -16,12 +16,13 @@
 body {
     display: flex;
     justify-content: center;
-    margin-bottom: 0px;
+    margin-bottom: 0px;    
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -232,7 +233,7 @@ nav{
 }
 
 
-#menu :hover{
+#menu li:hover{
     border-top: 1px #0065FC solid;
     color: #0065FC;
     
@@ -273,6 +274,10 @@ nav{
     width: 137px;
     font-weight: bold;
 
+}
+
+#buttonRechercheMobile{
+    display: none;
 }
 
 #zoneRecherche{
@@ -570,5 +575,354 @@ nav{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+
+    body{
+        margin: 0px;
+    }
+
+    .main-container{
+        padding: 0px;
+    }
+    
+    
+
+    nav{
+        
+        display: flex;
+        flex-direction: column;
+  
+    }
+
+    #logo{
+        width: 100px;
+        align-items: center;
+        margin-top: 50px;
+        
+
+    }
+
+    #menu{
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 0px;
+        gap: 0px;
+        align-items: center;
+        
+        
+        
+    }
+
+    #menu li{
+        border-bottom: #F2F2F2 solid 2px;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 30px;
+        padding-left: 4%;
+        
+    }
+
+    #menu li:hover{
+        border-bottom: 2px #0065FC solid;
+        color: #0065FC;
+        border-top: 0;
+        
+    }
+
+    .recherche h2{
+        text-align: center;
+        font-size: 300%;
+        margin-bottom: 3%;
+        
+
+    }
+
+    .recherche p{
+        font-size: 210%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        margin-top: 0;
+    }
+
+    .recherche  form {
+        height: 100px;
+        width: 100%;
+        margin-left: 50px;
+        
+    }
+
+    .fa-location-dot{
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    #zoneRecherche{
+        height: 76px;
+        border: solid 2px #F2F2F2;
+        width: 500px;
+    }
+
+    #buttonRecherche{
+        height: 81px;
+        width: 90px;
+        border-radius: 20px 20px 20px 20px;
+        filter: drop-shadow(0px 0px 0px 15px rgba(0, 0, 0, 0.3));
+        margin-right: 60px;
+        position: absolute;
+        right: 1px;
+        display: none;
+    }
+
+    #buttonRechercheMobile{
+        display: flex;
+        height: 81px;
+        width: 15%;
+        border-radius: 25px 25px 25px 25px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
+        margin-right: 60px;
+        position: relative;
+        right: 13px;
+        
+        
+        
+        border: solid 1px #0065FC;
+        background-color: #0065FC;
+        padding: 5px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+
+    #buttonRechercheMobile .fa-solid{
+        font-size: 40px;
+        color: white;
+        
+        
+
+    }
+
+    .filtres{
+        margin-left: 10%;
+    }
+
+    .filtres h3{
+        font-size: 30px;
+    }
+    
+    .filtres ul{
+        flex-wrap: wrap;
+        align-content: space-between;
+        
+    }
+
+    .filtres li{
+        width: 40%;
+        font-size: 165%;
+        border-radius: 50px;
+        padding-top: 2%;
+        padding-left: 0px;
+        padding-bottom: 2%;
+        
+        
+
+    }
+
+    .filtres .fa-solid{
+        font-size: 110%;
+        margin-right: 8%;
+        
+    }
+
+    .filtres .fa-solid.fa-person {
+        font-size: 130%;
+        margin-left: -16%;
+        
+    
+    }
+
+    .info .fa-solid{
+        width: 44px;
+        height: 30px;
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-top: 22px;
+        margin-left: 60px;
+        padding-top: 7px;
+        
+    }
+
+    .info p{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+
+    .hebergements-and-populaires section{
+        padding: 0;
+        
+        border-radius: 0px;
+        
+        
+    }
+
+
+    .hebergements{
+        order: 2;
+        
+    }
+
+    .populaires{
+        order: 1;
+        width: 100%;
+        margin-top: 7%;
+
+        
+    }
+
+    .populaires .populaires-cards{
+        flex-direction: column;
+        margin-left: 5%;
+        padding-bottom: 6%;
+        
+        
+    }
+
+
+    .populaires .populaires-title h2{
+        margin-left: 6%;
+        font-size: 210%;
+        
+    }
+
+    .populaires .populaires-title .fa-solid{
+        margin-right: 6%;
+        font-size: 200%;
+    }
+    
+
+    .populaires .card{
+        width: 70%;
+        
+        
+        
+    }
+
+   
+    .populaires .card img{
+        width: 30%;
+        
+    }
+
+    .populaires-cards .card-title{
+        font-size: 22px;
+
+    }
+
+    .populaires-cards a{
+        width: 100%;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 22px;
+    }
+
+    .hebergements-and-populaires .hebergements{
+        background-color: white;
+    }
+
+    .hebergements{
+        margin-left: 5%;
+    }
+
+    .hebergements .section-title{
+        font-size: 35px;
+        margin-top: 10%;
+    }
+
+    .hebergements-cards{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
+    .hebergements-cards .card{
+        width: 85%;
+        height: 250px;
+    }
+
+    .hebergements-cards img{
+        height: 150px;
+    }
+
+    
+
+    .plus{
+        font-size: 250%;
+        margin-right: 0px;
+    }
+
+    .Activités{
+        margin-left: 9%;
+    }
+
+
+
+    .Activités .section-title{
+        font-size: 250%;
+        height: 20%;
+        margin-bottom: 8%;
+    }
+    .Activités-cards{
+        flex-direction: column;
+        width: 85%;
+        margin-top: 5%;
+        margin-right: 0;
+        
+        
+    }
+
+    .Activités .card {
+        width: 100%;
+    }
+
+    .Activités img{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+    .footer {
+        flex-direction: column;
+        margin: 0; 
+        width: 100%;
+        gap: 0;
+        font-size: 120%;
+    }
+    
+    .footer-lien{
+        margin-left: 10%;
+        margin-bottom: 4%;
+    }
+
+    .footer-lien ul{
+        margin-bottom: 0;
+    }
+
+
+
+
+
+
+
 }
