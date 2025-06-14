@@ -178,7 +178,7 @@ nav{
 }
 
 .filtres .fa-solid.fa-person{
-    font-size: 20px;
+    
     margin-left: 5px; 
 } 
 
@@ -255,7 +255,7 @@ nav{
 
 .hebergements-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     font-size: 15px;
 }
 
@@ -275,8 +275,8 @@ nav{
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 7px;
     font-size: 14px;
 }
 
@@ -509,14 +509,9 @@ nav{
     } 
 
     .info .fa-solid{
-        width: 2vw;
-        height: 2vw;
-        font-size: 1.5vw;
-        border-radius: 2vw;
         margin-bottom: 0;
-        border: solid 0.2vw #F2F2F2;
-        margin-top: 0.7vw;
-        padding: 5px;
+        margin-top: 0.6vw;
+        padding: 1vw;
     }
 
     .info p{
